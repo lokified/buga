@@ -20,24 +20,19 @@ function NavBar() {
     <>
       <nav
         style={{
-          backgroundColor: scroll == 1 ? "white" : "transparent",
-          boxShadow: scroll == 1 ? "rgba(0, 0, 0, 0.08) 0px 4px 12px" : "none",
+          backgroundColor: scroll === 1 ? "white" : "transparent",
+          boxShadow: scroll === 1 ? "rgba(0, 0, 0, 0.08) 0px 4px 12px" : "none",
         }}
       >
         <div className="container nav-bar">
           <div>
-            <img
-              src={scroll == 1 ? "./images/dark-logo.svg" : "./images/logo.svg"}
-              style={{
-                marginTop: ".5rem",
-              }}
-              className="logo"
-            />
+          
+            <p className={scroll === 1 ? "text-dark" : "text-white"}>Logo goes here</p>
           </div>
           <div>
             <ul
               className={
-                scroll == 1
+                scroll === 1
                   ? "scroll-nav-links "
                   : "nav-links " && click
                   ? "scroll-nav-links active "
@@ -74,7 +69,7 @@ function NavBar() {
           </div>
 
           <div>
-            <button className={scroll == 1 ? "scroll-nav-btn" : "nav-btn"}>
+            <button className={scroll === 1 ? "scroll-nav-btn" : "nav-btn"}>
               Get Started
             </button>
 
