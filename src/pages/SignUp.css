@@ -1,0 +1,37 @@
+.sign-up-section {
+  padding: 7rem  0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+input {
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  background-color: #eff8f6;
+}
+
+.driver-vehicle-section {
+  display: flex;
+  flex-direction: column;
+}
+.driver-vehicle-section input {
+  margin: 0.5rem;
+}
+
+.driver-info-section input,
+.driver-family-section input,
+.driver-address-section input,
+.driver-signup-btn {
+  margin: 0.5rem;
+}
+
+.driver-signup-btn button {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.7rem 2rem;
+  border-radius: 2rem;
+  border: none;
+}

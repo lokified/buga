@@ -1,9 +1,9 @@
 :root {
-  --primary-color: #1f3e76;
+  --primary-color: #0c6a52;
   --secondary-color: #ffffff;
   --header-color: #244886;
-  --text-color: #0f2137;
-  --subtext-color: #343d48;
+  --text-color: #000;
+  --subtext-color: #000;
   --transition: all 400ms ease-in-out;
 }
 
@@ -14,6 +14,7 @@ body {
   height: 100vh;
   overflow-x: hidden;
   position: relative;
+  scroll-behavior: smooth;
 }
 
 a {

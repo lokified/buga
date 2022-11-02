@@ -1,5 +1,5 @@
 .faq-section {
-  margin-top: 7rem;
+  padding-top: 6.5rem;
 }
 
 .faq {
@@ -7,11 +7,11 @@
   width: 60%;
   margin: 1rem auto;
   border-bottom: 1px solid #eaedf3;
-
+  padding: .8rem 0;
 }
 
 .faq i {
-  color: #25cb9e;
+  color: var(--primary-color);
   margin-right: 1rem;
   font-size: 20px;
 }

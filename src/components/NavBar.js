@@ -20,24 +20,27 @@ function NavBar() {
     <>
       <nav
         style={{
-          backgroundColor: scroll === 1 ? "white" : "transparent",
+          backgroundColor: scroll === 1 ? "#fff" : "#0c6a52",
           boxShadow: scroll === 1 ? "rgba(0, 0, 0, 0.08) 0px 4px 12px" : "none",
         }}
       >
         <div className="container nav-bar">
-          <div>
-          
-            <p className={scroll === 1 ? "text-dark" : "text-white"}>Logo goes here</p>
+          <div className="nav-logo">
+            <img
+              src={
+                scroll === 1
+                  ? "./images/logo-yellow.png"
+                  : "./images/logo-light.png"
+              }
+            />
           </div>
           <div>
             <ul
               className={
-                scroll === 1
-                  ? "scroll-nav-links "
-                  : "nav-links " && click
-                  ? "scroll-nav-links active "
-                  : "scroll-nav-links" && click
+                click
                   ? "nav-links active"
+                  : scroll === 1
+                  ? "scroll-nav-links"
                   : "nav-links"
               }
             >
@@ -48,33 +51,38 @@ function NavBar() {
               </li>
 
               <li>
-                <a href="#feature">Features</a>
+                <a href="#buga-app">BugaApp</a>
               </li>
 
               <li>
-                <a href="#testimonial">Testimonial</a>
+                <a href="#features">Features</a>
               </li>
 
               <li>
-                <a href="#pricing">Pricing</a>
+                <a href="#business">Business</a>
+              </li>
+
+              <li>
+                <a href="#faq">Faq</a>
               </li>
 
               <div className="socials">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-discord"></i>
-                <i class="fa-brands fa-google-play"></i>
+                <i className="fa-brands fa-facebook"></i>
+                <i className="fa-brands fa-twitter"></i>
+                <i className="fa-brands fa-discord"></i>
+                <i className="fa-brands fa-google-play"></i>
               </div>
             </ul>
           </div>
 
           <div>
-            <button className={scroll === 1 ? "scroll-nav-btn" : "nav-btn"}>
-              Get Started
-            </button>
-
             <button onClick={handleClick} className="drop-btn">
-              <i className="fa-solid fa-bars "></i>
+              <i
+                className="fa-solid fa-bars"
+                style={{
+                  color: scroll === 1 ? "#0c6a52" : "#fff",
+                }}
+              ></i>
             </button>
           </div>
         </div>

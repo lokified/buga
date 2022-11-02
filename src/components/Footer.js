@@ -42,7 +42,7 @@ function Footer() {
                 <p>Responsible supply chain</p>
               </div>
             </div>
-            <p className='text-center' style={{color: "#343D48", paddingBottom: "1rem"}}>All right reserved - Design & Developed byRedQ, Inc</p>
+            <p className='text-center' style={{color: "#fff", paddingBottom: "1rem"}}>All right reserved - Design & Developed byRedQ, Inc</p>
           </footer>
         </section>
       </>

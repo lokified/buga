@@ -44,15 +44,6 @@
   border: none;
 }
 
-.intro-section-sponsor {
-  display: flex;
-  margin: 3rem 0;
-}
-
-.intro-section-sponsor-imgs img {
-  margin: 0 1.2rem;
-}
-
 .feature-section {
   padding-top: 5rem;
 }
@@ -142,7 +133,7 @@
 }
 
 .core-section {
-  padding-top: 5rem;
+  padding-top: 7rem;
 }
 
 .getStarted-btn {
@@ -183,7 +174,7 @@
 
 .function div:nth-child(2) p {
   font-size: 15px;
-  color: #a7b8d4;
+  color: #c8e4db;
   line-height: 2rem;
 }
 
@@ -193,7 +184,7 @@
   background-color: #ffffff;
   border-radius: 35%;
   width: 30%;
-  color: #1f3e76;
+  color: var(--primary-color);
   padding: 0.8rem;
 }
 
@@ -202,95 +193,19 @@
 }
 
 .payment-section {
-  margin-top: 6rem;
+  padding-top: 6.5rem;
 }
 
 .payment-section-img img {
   width: 90%;
 }
 
-.signup-section {
-  background-color: var(--primary-color);
+.download {
+  margin: 2rem 0;
 }
 
-.signup-section {
-  color: #ffffff;
-  padding: 5rem 0;
-}
-
-.signup {
-  display: flex;
-  justify-content: center;
-  margin: 2rem;
-  flex-wrap: wrap;
-}
-
-.freeplan,
-.premium {
-  background-color: #2f5392;
-  padding: 4rem 3rem 1rem;
-  border-radius: 0.6rem;
-  width: 400px;
-  margin: 5rem 2rem 1rem 0;
-}
-
-.wrapper {
-  display: flex;
-  margin: 1rem 0;
-}
-
-.wrapper i {
-  color: rgb(96, 211, 140);
-  margin-right: 0.8rem;
-}
-
-.wrapper p {
-  margin-top: -0.3rem;
-  width: 85%;
-}
-
-.freeplan-wrapper {
-  margin-top: 4rem;
-}
-
-.free-btn {
-  background-color: #ffffff;
-  color: var(--primary-color);
-}
-
-.free-btn:hover,
-.premium-btn:hover {
-  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-  transition: var(--transition);
-}
-
-.premium {
-  background-color: #ffffff;
-  color: var(--subtext-color);
-  position: relative;
-}
-
-.recomended {
-  display: flex;
-  justify-content: space-between;
-}
-
-.recomended div:nth-child(1) h2 {
-  font-size: 22px;
-}
-
-.recomended div:nth-child(1) p {
-  font-size: 16px;
-}
-
-.recomended div:nth-child(2) p {
-  font-size: 16px;
-}
-
-.recomended div:nth-child(2) h2 {
-  font-size: 26px;
-  color: #25cb9e;
-  margin-top: -0.6rem;
+.download img {
+  margin-right: 1rem;
 }
 
 @media screen and (max-width: 780px) {

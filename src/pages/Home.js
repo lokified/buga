@@ -1,8 +1,9 @@
 import React from "react";
 import FaqList from "../components/FaqList";
 import Footer from "../components/Footer";
-import TestimonyList from "../components/TestimonyList";
 import "./Home.css";
+import { HiOutlineDownload } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -11,36 +12,16 @@ function Home() {
         <div className="container">
           <div className="row pt-5">
             <div className="col-md-7 intro-section-desc">
-              <h1>Experience your ultimate mobile application</h1>
+              <h1>You got package?</h1>
               <p>
-                Get your blood tests delivered at let home collect sample from
-                the victory of the managements that supplies best design system
-                guidelines ever.
+                The Most Versatile And Efficient Logistics Service In Nigeria.
+                Best Drivers Best Prices Parcel Tracking
               </p>
 
               <div className="intro-section-btns">
-                <button>Get Started</button>
-
-                <button style={{ alignItems: "center"}}>
-                  <i
-                    class="fa-solid fa-circle-play"
-                    style={{
-                      marginRight: ".5rem",
-                      fontSize: "1.5rem",
-                      paddingTop: ".8rem",
-                    }}
-                  ></i>
-                  <span>Watch Video</span>
-                </button>
-              </div>
-
-              <div className="intro-section-sponsor">
-                Sponsored by:
-                <div className="intro-section-sponsor-imgs">
-                  <img src="./images/paypal.svg" alt="" />
-                  <img src="./images/google.svg" alt="" />
-                  <img src="./images/dropbox.svg" alt="" />
-                </div>
+                <Link to="/signUp">
+                  <button>Get Started</button>
+                </Link>
               </div>
             </div>
             <div className="col-md-5 intro-section-img" intro->
@@ -54,7 +35,7 @@ function Home() {
         <div className="container">
           <p
             className="text-center"
-            style={{ color: "#244886", fontSize: "14px" }}
+            style={{ color: "#0c6a52", fontSize: "14px" }}
           >
             QUALITY FEATURES
           </p>
@@ -65,28 +46,28 @@ function Home() {
           <div className="feature-section-items">
             <div className="feature">
               <img src="./images/vector.svg" />
-              <h2>Vector Editing</h2>
+              <h2>Seamless Pickup Requests</h2>
               <p>
-                Get your blood tests delivered at home collect a sample from the
-                your blood tests.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut.
               </p>
             </div>
 
             <div className="feature">
               <img src="./images/customize.svg" />
-              <h2>Customize & Monitoring</h2>
+              <h2>24/7 Messaging Service</h2>
               <p>
-                Get your blood tests delivered at home collect a sample from the
-                your blood tests.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut.
               </p>
             </div>
 
             <div className="feature">
               <img src="./images/quality.svg" />
-              <h2>Quality & Short-period</h2>
+              <h2>Multi-Lingual Function</h2>
               <p>
-                Get your blood tests delivered at home collect a sample from the
-                your blood tests.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut.
               </p>
             </div>
           </div>
@@ -101,21 +82,19 @@ function Home() {
             </div>
 
             <div className="col-md-6">
-              <p style={{ color: "#244886", fontSize: "14px" }}>
-                CORE FEATURES
-              </p>
+              <p style={{ color: "#0c6a52", fontSize: "14px" }}>SERVICES</p>
               <h2 style={{ color: "#0F2137", fontSize: "42px" }}>
-                Smart Jackpots that you may love this anytime & anywhere
+                Quality riders and partners ready to deliver
               </h2>
               <div className="core-feature">
                 <div>
                   <img src="./images/smart.svg" />
                 </div>
                 <div>
-                  <h2>Smart Features</h2>
+                  <h2>Logistics For Any Business Size</h2>
                   <p>
-                    Get your blood tests delivered at let home collect sample
-                    from the victory of the managements. your blood tests.
+                    With Pilots and G-Partners all over Lagos, there will always
+                    be one nearby to pick up your parcels and more.
                   </p>
                 </div>
               </div>
@@ -125,10 +104,10 @@ function Home() {
                   <img src="./images/secure.svg" />
                 </div>
                 <div>
-                  <h2>Secure Contents</h2>
+                  <h2>Schedule Pickup</h2>
                   <p>
-                    Get your blood tests delivered at let home collect sample
-                    from the victory of the managements. your blood tests.
+                    Need to have your item picked up at a specific time? We’ve
+                    got that covered.
                   </p>
                 </div>
               </div>
@@ -137,16 +116,16 @@ function Home() {
         </div>
       </section>
 
-      <section className="quality-features-section">
+      <section className="quality-features-section" id="features">
         <div className="container">
           <p
-            style={{ color: "#244886", fontSize: "14px" }}
+            style={{ color: "#0c6a52", fontSize: "14px" }}
             className="text-center"
           >
             CORE FEATURES
           </p>
           <h2
-            style={{ color: "#0F2137", fontSize: "42px" }}
+            style={{ color: "#000", fontSize: "42px" }}
             className="text-center"
           >
             Meet exciting feature of app
@@ -158,10 +137,10 @@ function Home() {
                 <img src="./images/sf.svg" />
               </div>
               <div>
-                <h2>Smart Features</h2>
+                <h2>Seamless Pickup Requests</h2>
                 <p>
-                  Get your blood tests delivered at let home collect sample from
-                  the victory of the managements.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
               </div>
             </div>
@@ -171,10 +150,10 @@ function Home() {
                 <img src="./images/fp.svg" />
               </div>
               <div>
-                <h2>Smart Features</h2>
+                <h2>24/7 Messaging Service</h2>
                 <p>
-                  Get your blood tests delivered at let home collect sample from
-                  the victory of the managements.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
               </div>
             </div>
@@ -184,10 +163,10 @@ function Home() {
                 <img src="./images/uc.svg" />
               </div>
               <div>
-                <h2>Smart Features</h2>
+                <h2>Multi-Lingual Function</h2>
                 <p>
-                  Get your blood tests delivered at let home collect sample from
-                  the victory of the managements.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
               </div>
             </div>
@@ -197,10 +176,10 @@ function Home() {
                 <img src="./images/u-.svg" />
               </div>
               <div>
-                <h2>Smart Features</h2>
+                <h2>Trained & Trusted Drivers</h2>
                 <p>
-                  Get your blood tests delivered at let home collect sample from
-                  the victory of the managements.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
               </div>
             </div>
@@ -210,10 +189,10 @@ function Home() {
                 <img src="./images/bp.svg" />
               </div>
               <div>
-                <h2>Smart Features</h2>
+                <h2>Logistics For Any Business Size</h2>
                 <p>
-                  Get your blood tests delivered at let home collect sample from
-                  the victory of the managements.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
               </div>
             </div>
@@ -223,10 +202,12 @@ function Home() {
                 <img src="./images/cs.svg" />
               </div>
               <div>
-                <h2>Smart Features</h2>
+                <h2>
+                  Detailed Descriptive Option For Optimum Effective Pricing
+                </h2>
                 <p>
-                  Get your blood tests delivered at let home collect sample from
-                  the victory of the managements.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
               </div>
             </div>
@@ -234,32 +215,28 @@ function Home() {
         </div>
       </section>
 
-      <section className="core-section">
+      <section className="core-section" id="business">
         <div className="container">
           <div className="row">
             <div className="col-md-6">
-              <p style={{ color: "#244886", fontSize: "14px" }}>
-                CORE FEATURES
-              </p>
-              <h2 style={{ color: "#0F2137", fontSize: "42px", width: "80%" }}>
-                Smart Jackpots that you may love this anytime & anywhere
+              <p style={{ color: "#0c6a52", fontSize: "14px" }}>PARTNER</p>
+              <h2 style={{ color: "#000", fontSize: "42px", width: "80%" }}>
+                Got a bike?
               </h2>
               <p
                 style={{
-                  color: "#02073E",
+                  color: "#000",
                   fontSize: "17px",
                   margin: "1rem 0",
                   lineHeight: "2.5rem",
                   width: "80%",
                 }}
               >
-                Get your tests delivered at let home collect sample from the
-                victory of the managements that supplies best design system
-                guidelines ever. Get your tests delivered at let home collect
-                sample.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
 
-              <button className="getStarted-btn">Get Started</button>
+              <button className="getStarted-btn">Partner With Us</button>
             </div>
             <div
               className="col-md-6 getStarted"
@@ -280,10 +257,10 @@ function Home() {
               <h2 className="number">01</h2>
 
               <div className="function-des">
-                <h2>Set disbursement Instructions</h2>
+                <h2>Sign up on the app</h2>
                 <p>
-                  Get your blood tests delivered at home collect a sample from
-                  the your blood tests.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
               </div>
             </div>
@@ -292,10 +269,10 @@ function Home() {
               <h2 className="number">02</h2>
 
               <div className="function-des">
-                <h2>Assembly retrieves funds from your account</h2>
+                <h2>Carefully enter pickup details</h2>
                 <p>
-                  Get your blood tests delivered at home collect a sample from
-                  the your blood tests.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
               </div>
             </div>
@@ -304,10 +281,10 @@ function Home() {
               <h2 className="number">03</h2>
 
               <div className="function-des">
-                <h2>Assembly initiates disbursement</h2>
+                <h2>Place your service order to be delivered</h2>
                 <p>
-                  Get your blood tests delivered at home collect a sample from
-                  the your blood tests.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
               </div>
             </div>
@@ -316,10 +293,10 @@ function Home() {
               <h2 className="number">04</h2>
 
               <div className="function-des">
-                <h2>Customer receives funds payment</h2>
+                <h2>The system provides you the service bill.</h2>
                 <p>
-                  Get your blood tests delivered at home collect a sample from
-                  the your blood tests.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
               </div>
             </div>
@@ -327,193 +304,56 @@ function Home() {
         </div>
       </section>
 
-      <section id="testimonial" className="testimonial-section">
-        <div>
-          <p
-            className="text-center"
-            style={{ color: "#244886", fontSize: "14px" }}
-          >
-            TESTIMONIAL
-          </p>
-          <h2
-            className="text-center"
-            style={{ color: "#0F2137", fontSize: "32px" }}
-          >
-            Meet Client Satisfaction
-          </h2>
-
-          <TestimonyList />
-        </div>
-      </section>
-
-      <section className="payment-section">
+      <section className="payment-section" id="buga-app">
         <div className="container">
           <div className="row">
             <div className="col-md-6 payment-section-img">
               <img src="./images/secure-payment.png" />
             </div>
             <div className="col-md-6">
-              <p style={{ color: "#244886", fontSize: "14px" }}>
-                PAYMENT SECURITY
-              </p>
-              <h2 style={{ color: "#0F2137", fontSize: "42px", width: "80%" }}>
-                Secure Payment Transaction System with #1 Ranking
-              </h2>
-              <p
+              <p style={{ color: "#0c6a52", fontSize: "14px" }}>BUGA APP</p>
+              <h2
                 style={{
-                  color: "#02073E",
-                  fontSize: "17px",
-                  margin: "1rem 0",
-                  lineHeight: "2.5rem",
+                  color: "#000",
+                  fontSize: "42px",
                   width: "80%",
+                  fontWeight: "bold",
                 }}
               >
-                Get your tests delivered at let home collect sample from the
-                victory of the managements that supplies best design system
-                guidelines ever. Get your tests delivered at let home collect
-                sample.
-              </p>
+                DOWNLOAD OUR MOBILE APP NOW
+              </h2>
 
-              <button className="getStarted-btn">Learn More</button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="pricing" className="signup-section">
-        <div className="container">
-          <p className="text-center">WHATS THE FUNCTION</p>
-          <h2 className="text-center">Let's see how it works</h2>
-          <div className="container signup">
-            <div className="freeplan">
-              <h2>Free Plan</h2>
-              <p>For Small teams or office</p>
-              <div className="freeplan-wrapper">
-                <div className="wrapper">
-                  <i class="fa-solid fa-circle-check"></i>
-                  <p>
-                    Ultimate access to all course, exercises and assessments
-                  </p>
-                </div>
-
-                <div className="wrapper">
-                  <i class="fa-solid fa-circle-check"></i>
-                  <p>
-                    Free access for all kind of exercise corrections with
-                    downloads.
-                  </p>
-                </div>
-
-                <div className="wrapper">
-                  <i class="fa-solid fa-circle-check"></i>
-                  <p>
-                    Total assessment corrections with free download access
-                    system
-                  </p>
-                </div>
-
-                <div className="wrapper" style={{ color: "#98b2df" }}>
-                  <i
-                    style={{ color: "#98b2df" }}
-                    className="fa-solid fa-circle-xmark"
-                  ></i>
-                  <p>
-                    Unlimited download of courses on the mobile app contents
-                  </p>
-                </div>
-
-                <div className="wrapper" style={{ color: "#98b2df" }}>
-                  <i
-                    style={{ color: "#98b2df" }}
-                    className="fa-solid fa-circle-xmark"
-                  ></i>
-                  <p>Download and print courses and exercises in PDF </p>
-                </div>
-
-                <div className="text-center">
-                  <button className="getStarted-btn free-btn">
-                    signup Now
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div className="premium">
-              <span
-                style={{
-                  color: "#FFFFFF",
-                  backgroundColor: "#EF9E48",
-                  padding: ".2rem",
-                  fontSize: "14px",
-                  borderRadius: ".2rem",
-                  position: "absolute",
-                  top: "30px",
-                  left: "50px",
-                }}
-              >
-                Recommended
-              </span>
-
-              <div className="recomended">
-                <div>
-                  <h2>Premium</h2>
-                  <p>For startup enterprise</p>
-                </div>
-
-                <div>
-                  <p>Starting from</p>
-                  <h2>$29.99/mo</h2>
-                </div>
-              </div>
-
-              <div className="freeplan-wrapper">
-                <div className="wrapper">
-                  <i class="fa-solid fa-circle-check"></i>
-                  <p>
-                    Ultimate access to all course, exercises and assessments
-                  </p>
-                </div>
-
-                <div className="wrapper">
-                  <i class="fa-solid fa-circle-check"></i>
-                  <p>
-                    Free access for all kind of exercise corrections with
-                    downloads.
-                  </p>
-                </div>
-
-                <div className="wrapper">
-                  <i class="fa-solid fa-circle-check"></i>
-                  <p>
-                    Total assessment corrections with free download access
-                    system
-                  </p>
-                </div>
-
-                <div className="wrapper">
-                  <i class="fa-solid fa-circle-check"></i>
-
-                  <p>
-                    Unlimited download of courses on the mobile app contents
-                  </p>
-                </div>
-
-                <div className="wrapper">
-                  <i class="fa-solid fa-circle-check"></i>
-
-                  <p>Download and print courses and exercises in PDF </p>
-                </div>
-
-                <div className="text-center">
-                  <button className="getStarted-btn premium-btn">
-                    signup Now
-                  </button>
+              <div>
+                <p
+                  style={{
+                    color: "#000",
+                    fontSize: "20px",
+                  }}
+                >
+                  For Best Delivery Services
+                </p>
+                <button className="getStarted-btn">
+                  Get App
+                  <HiOutlineDownload
+                    style={{
+                      fontSize: "1.5rem",
+                      color: "#fff",
+                      fontWeight: "bold",
+                      marginLeft: ".5rem",
+                    }}
+                  />
+                </button>
+                <br />
+                <div className="download">
+                  <img src="./images/android.svg" />
+                  <img src="./images/ios.svg" />
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
       <FaqList />
       <Footer />
     </>

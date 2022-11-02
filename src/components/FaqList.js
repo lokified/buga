@@ -5,22 +5,22 @@ import "./Faq.css";
 function FaqList() {
   return (
     <>
-      <section className="faq-section">
+      <section className="faq-section" id="faq">
         <div className="container">
           <p
             className="text-center"
-            style={{ color: "#244886", fontSize: "14px" }}
+            style={{ color: "#0c6a52", fontSize: "14px" }}
           >
             GET YOUR QUESTION ANSWER
           </p>
           <h2
             className="text-center"
-            style={{ color: "#0F2137", fontSize: "32px" }}
+            style={{ color: "#000", fontSize: "32px" }}
           >
             Frequently asked question
           </h2>
 
-          <div style={{margin: "5rem 0"}}>
+          <div style={{ margin: "5rem 0" }}>
             <Faq
               question="How to contact with riders emergency ?"
               answer="Get your website ads tests delivered at let collect sample from the victory of the managements that supplies best design system which guidelines ever with multiple features."
