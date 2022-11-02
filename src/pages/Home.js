@@ -235,8 +235,9 @@ function Home() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
-
-              <button className="getStarted-btn">Partner With Us</button>
+              <Link to="/signUp">
+                <button className="getStarted-btn">Partner With Us</button>
+              </Link>
             </div>
             <div
               className="col-md-6 getStarted"
