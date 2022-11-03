@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import FaqList from "../components/FaqList";
 import Footer from "../components/Footer";
 import "./Home.css";
@@ -6,6 +6,25 @@ import { HiOutlineDownload } from "react-icons/hi";
 import { Link } from "react-router-dom";
 
 function Home() {
+
+  function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+
+  window.addEventListener("scroll", reveal);
+
   return (
     <>
       <section id="home" className="intro-section">
@@ -32,7 +51,7 @@ function Home() {
       </section>
 
       <section id="feature" className="feature-section">
-        <div className="container">
+        <div className="container reveal active">
           <p
             className="text-center"
             style={{ color: "#0c6a52", fontSize: "14px" }}
@@ -43,7 +62,7 @@ function Home() {
             Meet exciting feature of app
           </h2>
 
-          <div className="feature-section-items">
+          <div className="feature-section-items animate__slideInUp">
             <div className="feature">
               <img src="./images/vector.svg" />
               <h2>Seamless Pickup Requests</h2>
@@ -77,11 +96,11 @@ function Home() {
       <section className="core-feature-section">
         <div className="container">
           <div className="row">
-            <div className="col-md-6 core-feature-section-img">
+            <div className="col-md-6 core-feature-section-img reveal fade-left">
               <img src="./images/core.png" />
             </div>
 
-            <div className="col-md-6">
+            <div className="col-md-6 reveal fade-right">
               <p style={{ color: "#0c6a52", fontSize: "14px" }}>SERVICES</p>
               <h2 style={{ color: "#0F2137", fontSize: "42px" }}>
                 Quality riders and partners ready to deliver
@@ -116,7 +135,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="quality-features-section" id="features">
+      <section className="quality-features-section reveal active" id="features">
         <div className="container">
           <p
             style={{ color: "#0c6a52", fontSize: "14px" }}
@@ -218,7 +237,7 @@ function Home() {
       <section className="core-section" id="business">
         <div className="container">
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-md-6 reveal fade-left">
               <p style={{ color: "#0c6a52", fontSize: "14px" }}>PARTNER</p>
               <h2 style={{ color: "#000", fontSize: "42px", width: "80%" }}>
                 Got a bike?
@@ -240,7 +259,7 @@ function Home() {
               </Link>
             </div>
             <div
-              className="col-md-6 getStarted"
+              className="col-md-6 getStarted reveal fade-right"
               style={{ position: "relative" }}
             >
               <img src="./images/getstarted.png" />
@@ -308,10 +327,10 @@ function Home() {
       <section className="payment-section" id="buga-app">
         <div className="container">
           <div className="row">
-            <div className="col-md-6 payment-section-img">
+            <div className="col-md-6 payment-section-img reveal fade-left">
               <img src="./images/secure-payment.png" />
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 reveal fade-right">
               <p style={{ color: "#0c6a52", fontSize: "14px" }}>BUGA APP</p>
               <h2
                 style={{
