@@ -1,31 +1,10 @@
 .sign-up-section {
   padding: 7rem  0;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
 }
 
-input {
-  padding: 0.7rem;
-  border-radius: 0.5rem;
-  outline: none;
-  border: none;
-  background-color: #eff8f6;
-}
-
-.driver-vehicle-section {
-  display: flex;
-  flex-direction: column;
-}
-.driver-vehicle-section input {
-  margin: 0.5rem;
-}
-
-.driver-info-section input,
-.driver-family-section input,
-.driver-address-section input,
-.driver-signup-btn {
-  margin: 0.5rem;
+.input{
+  margin: 1rem;
+  padding: 2rem;
 }
 
 .driver-signup-btn button {
@@ -34,4 +13,41 @@ input {
   padding: 0.7rem 2rem;
   border-radius: 2rem;
   border: none;
+}
+
+.driver-info-section .input{
+  margin:0 1rem 0 0;
+}
+.driver-info-section{
+  margin: 1rem 0;
+}
+.driver-address-section .input{
+    margin:0 1rem 0 0;
+
+}
+.driver-vehicle-section{
+  margin: 1rem 0;
+}
+.driver-vehicle-section .input{
+    margin:0 1rem 0 0;
+}
+.driver-info-section{
+    margin: 1rem 0;
+
+}
+.driver-info-section .input{
+    margin:0 1rem 0 0;
+
+}
+.driver-vehicle-section .one{
+  margin: 1rem 1rem 1rem 0;
+}
+/* .driver-vehicle-section .one{
+  margin:0 1rem 0 0;
+} */
+.selectclass2{
+  padding-right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
